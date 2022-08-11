@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li class="li1"><img src="./image/spotify logo.png" alt="spotify">Spotify</li>
+            <li>Home</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Song </h1>
+            <div>
+                <div class="songitem">
+                    <img src="./image/pic1.jpg" alt="">
+                    <span class="songname">Heart Break</span>
+                    <span class="songlistplay"><span>05:30</span><i id="1" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic2.jpg" alt="" class="heatwave">
+                    <span class="songname">heat wave</span>
+                    <span class="songlistplay"><span>05:30</span><i id="2" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic3.jpg" alt="">
+                    <span class="songname">Hey Mama</span>
+                    <span class="songlistplay"><span>05:30</span><i id="3" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic4.jpg" alt="">
+                    <span class="songname">Shadgi</span>
+                    <span class="songlistplay"><span>05:30</span><i id="4" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic5.jpg" alt="">
+                    <span class="songname">worth it</span>
+                    <span class="songlistplay"><span>05:30</span><i id="5" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic6.jpg" alt="">
+                    <span class="songname">Sad girlz</span>
+                    <span class="songlistplay"><span>05:30</span> <i id="6" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+                <div class="songitem">
+                    <img src="./image/pic7.jpg" alt=""  class="heatwave">
+                    <span class="songname">Love me like you do</span>
+                    <span class="songlistplay"><span>05:30</span><i id="7" class="fa-solid songitemplay fa-play"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="songbanner"><img src="./image/background img.jpg" alt=""></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0" max="100" value="0">
+
+        <audio src="./song/1.mp3" id="music"></audio>
+        <div class="icon">
+            <h2><i class="fa-solid fa-backward" id="prev"></i></h2>
+            <h2 onclick="runMusic()"><i  class="fa-solid fa-play" id="masterPlay"></i></h2>
+            <h2><i class="fa-solid fa-forward" id="next"></i></h2>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="spotify.js"></script>
+</body>
+
+</html>
